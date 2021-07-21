@@ -1,0 +1,42 @@
+.filter_component{
+  color: #464646;
+  position: relative;
+  top: 90px;
+  margin-bottom: 150px;
+  font-family: 'Fredoka One', cursive;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.filter_by select{
+  cursor: pointer;
+  box-shadow: 3px 3px 5px rgb(20 20 20 / 80%);
+  color: #464646;
+  background-image: linear-gradient(to right, #f7e5cc 0%, #e7caa3  51%, #ecd9bd  100%);
+  font-family: 'Fredoka One', cursive;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.filter_by option {
+  color: #464646;
+  font-size: 15px;
+  background:#f7e5cc
+}
+
+.filter_order select{
+  cursor: pointer;
+  box-shadow: 3px 3px 5px rgb(20 20 20 / 80%);
+  color: #464646;
+  background-image: linear-gradient(to right, #f7e5cc 0%, #e7caa3  51%, #ecd9bd  100%);
+  font-family: 'Fredoka One', cursive;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.filter_order option {
+  color: #464646;
+  font-size: 15px;
+  background:#f7e5cc
+}

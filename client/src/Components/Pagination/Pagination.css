@@ -1,0 +1,20 @@
+.page_button{
+  cursor: pointer;
+  color: #464646;
+  box-shadow: 1px 1px 5px rgb(20 20 20 / 80%);
+  background-color: #f0d9b9;
+  border-radius: 5px;
+  font-family: 'Fredoka One', cursive;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.page_button:hover{
+  background-image: linear-gradient(to right, #f5d49f 0%, #dfad6b  50%, #ebbf7d  100%);
+  transition: transform .5s ease;
+  transform: scale(1.1);
+}

@@ -1,0 +1,91 @@
+.add_recipe_container{
+  display: wrap;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../../img/comida-kawaii.webp');
+  background-size: cover;
+}
+
+.danger{
+  color: red;
+}
+
+.add_recipe_container input {
+  font-family: 'Fredoka One', cursive;
+  color: #464646;
+  box-shadow: 3px 3px 7px rgb(20 20 20 / 80%);
+  cursor: pointer;
+  background-color: #f0d9b9;
+  border-radius: 5px;
+}
+
+.add_recipe_container input:hover{
+  background-image: linear-gradient(to right, #f5d49f 0%, #dba359  51%, #ebbf7d  100%);
+}
+
+
+.add_recipe_container textarea{
+  font-family: 'Fredoka One', cursive;
+  color: #464646;
+  box-shadow: 3px 3px 7px rgb(20 20 20 / 80%);
+  cursor: pointer;
+  background-color: #f0d9b9;
+  border-radius: 5px;
+}
+
+.add_recipe_container textarea:hover{
+  background-image: linear-gradient(to right, #f5d49f 0%, #dba359  51%, #ebbf7d  100%);
+}
+
+.h1_title{
+  margin-top: 100px;
+  font-family: 'Lobster Two', cursive;
+  text-shadow: -1px 0 black, 5px 5px black, 1px 0 black, 0 5px black;
+  text-shadow: 2px 2px 5px #000000;
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+}
+
+.text_title_form{
+  font-family: 'Fredoka One', cursive;
+  color: white;
+  text-shadow: -1px 0 black, 5px 5px black, 1px 0 black, 0 5px black;
+  text-shadow: 2px 2px 5px #000000;
+  margin-top: 12px;
+  margin-bottom: 9px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.map_diets{
+  font-family: 'Fredoka One', cursive;
+  color: white;
+  text-shadow: -1px 0 black, 5px 5px black, 1px 0 black, 0 5px black;
+  text-shadow: 2px 2px 5px #000000;
+}
+
+.submit_button{
+  font-family: 'Fredoka One', cursive;
+  background-image: linear-gradient(to right, #f7e5cc 0%, #e7caa3  51%, #ecd9bd  100%);
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 7px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.submit_button:hover{
+  background-image: linear-gradient(to right, #f5d49f 0%, #dba359  51%, #ebbf7d  100%);
+  transition: transform .5s ease;
+  transform: scale(1.1);
+}
+
+.map_diets label {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+

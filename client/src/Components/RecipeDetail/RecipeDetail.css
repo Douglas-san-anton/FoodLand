@@ -1,0 +1,80 @@
+.detailsContainer{
+  display: wrap;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  margin-left: 300px;
+  width: 70%;
+  font-family: 'Fredoka One', cursive;
+  border: 5px solid red;
+  background-color: hsla(0,0%,94.1%,.8);
+  border-radius: 16px;
+  border: 1.6px solid hsla(0,0%,100%,.4);
+  box-shadow: 3px 3px 16px rgb(20 20 20 / 80%);
+}
+
+.detailsContainer h1 {
+ text-shadow: rgb(78, 78, 75) 1px 0 4px;
+}
+
+.detailsContainer h2 {
+  text-shadow: rgb(78, 78, 75) 1px 0 4px;
+  font-size: 30px;
+}
+
+.image_detail img{
+  display: block;
+  margin: 16px auto;
+  border-radius: 16px;
+  height: 250px;
+  width: 300px;
+  object-fit: cover;
+  object-position: center center;
+  box-shadow: 3px 3px 5px rgb(20 20 20 / 80%);
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.description {
+  text-align: justify;
+  color: #464646;
+  max-width: 80%;
+  margin-left: 10%;
+}
+
+.scoreDiv{
+  display: flex;
+  font-size: 15px;
+  text-justify: justify;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  position: relative;
+  right: 80px;
+  bottom: 200px;
+}
+
+.description_number{
+  margin-bottom: 5px;
+  padding: 5px;
+  background-color: #f0d9b9;
+  box-shadow: 3px 3px 5px rgb(20 20 20 / 80%);
+  border-radius: 4px;
+}
+
+.span_diets{
+  margin-right: 5px;
+  padding: 5px;
+  background-color: #f0d9b9;
+  box-shadow: 3px 3px 5px rgb(20 20 20 / 80%);
+  border-radius: 4px;
+  position: relative;
+  bottom: 22px;
+}
