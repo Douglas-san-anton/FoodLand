@@ -5,12 +5,11 @@ import './RecipeContainer.css'
 
 export default function RecipeContainer (props) {
 
-console.log('recipeContainer', props.recipe)
   return (
     <div className='card_container'>
       <h1 className='card_title'>{ props.recipe.title}</h1>
       <div className='image'>
-        <img src={props.recipe.image ? props.recipe.image : `${recipe} `} alt="picture" />
+        <img src={props.recipe.image ? props.recipe.image : `${recipe} `} alt="img" />
       </div>
       <div className="diets_card">
         {props.recipe.diets?.map((diet, index) => (

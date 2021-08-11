@@ -14,7 +14,7 @@ function RecipeDetail({match}) {
       console.log("useEffect")
       dispatch(getRecipeDetail(match.params.id))
       // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []); 
+  }, []);
 
   console.log(recipe.diets)
 

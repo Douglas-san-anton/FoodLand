@@ -69,7 +69,7 @@ export const orderDesc = (type) => (dispatch, getState) => {
   const filterBy = getState().filterBy
   const recipes = getState().recipes.slice()
   const filtered = getState().filteredRecipes.slice()
-  // const orderBy = getState().orderBy
+
   if (filterBy === 'All') {
     if (type === 'lower_score') {
       const orderedRecipes = recipes.sort(

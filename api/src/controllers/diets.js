@@ -1,11 +1,11 @@
 const { Diet } = require('../db')
 const axios = require('axios').default
-const { API_KEY2 } = process.env
+const { API_KEY3 } = process.env
 const { BASE_URL, BASE_NEXT, RECIPE_DETAIL} = require('../../constants')
 
 async function getDiets (req, res, next) {
   try{
-  const dietsData = await axios.get(`${BASE_URL}${BASE_NEXT}?apiKey=${API_KEY2}${RECIPE_DETAIL}&number=100`)
+  const dietsData = await axios.get(`${BASE_URL}${BASE_NEXT}?apiKey=${API_KEY3}${RECIPE_DETAIL}&number=100`)
   var dietTypes = []
   await dietsData.data.results.forEach(result => {
      result.diets.forEach(result => {

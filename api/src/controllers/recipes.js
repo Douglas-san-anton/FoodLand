@@ -3,13 +3,13 @@ const { Op } = require("sequelize");
 const { Recipe, Diet } = require('../db');
 const { v4: uuidv4 } = require('uuid');
 const axios = require('axios').default;
-const { API_KEY2 } = process.env;
+const { API_KEY3 } = process.env;
 const { BASE_URL, BASE_NEXT, RECIPE_DETAIL} = require('../../constants')
 
 async function getRecipeByName (req, res, next) {
   const {title} = req.query
   try {
-    const apiRecipes = await axios.get(`${BASE_URL}${BASE_NEXT}?apiKey=${API_KEY2}${RECIPE_DETAIL}&query=${title}`)
+    const apiRecipes = await axios.get(`${BASE_URL}${BASE_NEXT}?apiKey=${API_KEY3}${RECIPE_DETAIL}&query=${title}`)
     const dbRecipes = await Recipe.findAll({
       where: {title:
         { [Op.iLike]: `%${title}%`}
@@ -51,7 +51,7 @@ async function getRecipeByName (req, res, next) {
   const {id} = req.params
    try {
     if (id.length < 35) {
-      const apiRecipes = await axios.get(`${BASE_URL}${id}/information?apiKey=${API_KEY2}`)
+      const apiRecipes = await axios.get(`${BASE_URL}${id}/information?apiKey=${API_KEY3}`)
         let analyzedInstructionsMap = []
           apiRecipes.data.analyzedInstructions.map((inst) => (
            inst.steps?.map((s) => (
@@ -106,7 +106,7 @@ async function getRecipeByName (req, res, next) {
 
 async function getRecipes(req,res, next) {
   try {
-    const getRecipes = await axios.get(`${BASE_URL}${BASE_NEXT}?apiKey=${API_KEY2}${RECIPE_DETAIL}&number=100`)
+    const getRecipes = await axios.get(`${BASE_URL}${BASE_NEXT}?apiKey=${API_KEY3}${RECIPE_DETAIL}&number=100`)
     const dbRecipes = await Recipe.findAll({
       include: Diet
     });
